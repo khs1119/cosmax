@@ -1094,7 +1094,7 @@
       properties: {
         concepts: {
           type: 'array',
-          description: '키워드와 관련된 핵심 개념 9~12개 (사용자가 화면에서 표시 개수를 줄이거나 늘릴 수 있도록 충분히 제공)',
+          description: '키워드와 관련된 핵심 개념 16~20개 (사용자가 화면에서 표시 개수를 줄이거나 늘릴 수 있도록 충분히 제공)',
           items: {
             type: 'object',
             properties: {
@@ -1161,7 +1161,7 @@
       return 'You are a research navigator that helps with academic literature review. Use the build_research_map tool to return results for the keyword below.\n\n' +
         'Keyword: "' + kw + '"\n\n' +
         'Requirements:\n' +
-        '1. concepts: 9-12 core concepts related to this keyword (short noun phrases)\n' +
+        '1. concepts: 16-20 core concepts related to this keyword (short noun phrases)\n' +
         '2. edges: relationships between concepts, expressed as pairs of concept ids\n' +
         '3. foundation_papers: 3 foundational papers essential to understanding this field. Include an approximate citation count (citations)\n' +
         '4. latest_papers: 3 papers published in the last 1-2 years showing the latest trend\n' +
@@ -1173,7 +1173,7 @@
     return '당신은 학술 문헌 조사를 돕는 연구 내비게이터입니다. build_research_map 도구를 사용해 아래 키워드에 대한 결과를 반환하세요.\n\n' +
       '키워드: "' + kw + '"\n\n' +
       '요구사항:\n' +
-      '1. concepts: 이 키워드를 중심으로 관련된 핵심 개념 9~12개 (짧은 명사구)\n' +
+      '1. concepts: 이 키워드를 중심으로 관련된 핵심 개념 16~20개 (짧은 명사구)\n' +
       '2. edges: 개념 id 쌍으로 표현한 개념 간 연결 관계\n' +
       '3. foundation_papers: 이 분야를 이해하려면 반드시 읽어야 할 근본/대표 논문 3편. 대략적인 인용 수 추정치(citations)도 함께 제시\n' +
       '4. latest_papers: 최근 1~2년 내 발표된 최신 트렌드를 보여주는 논문 3편\n' +
